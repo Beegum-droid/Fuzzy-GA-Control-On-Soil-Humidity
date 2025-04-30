@@ -4,7 +4,7 @@ Using Fuzzy-GA to control actuators that is a water pump that provide water for 
 ## SimulationFuzzy.py
 This file is used as a simulation of fuzzy controlled system using membership function that tuned manually.
 
-### SimulationFGA.py
+## SimulationFGA.py
 This file is used as a simulation that the MF(Membership Function) is getting from GA tuned MF.
 
 ## MembershipTunerGA.py 
