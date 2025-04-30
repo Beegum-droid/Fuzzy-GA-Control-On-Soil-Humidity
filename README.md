@@ -32,7 +32,7 @@ Traditional threshold-based systems may not adapt well to dynamic environments l
 | `SimulationFuzzy.py`  | Simulates fuzzy logic control using **manually tuned** membership functions. |
 | `SimulationFGA.py`    | Simulates fuzzy logic control using **GA-optimized** membership functions. |
 | `MembershipTunerGA.py`| Uses a Genetic Algorithm to **optimize fuzzy membership functions**. |
-| `espflask.py`         | Flask-based server to **exchange data** between ESP32, computer, and database using HTTP. |
+| `flaskesp.py`         | Flask-based server to **exchange data** between ESP32, computer, and database using HTTP. |
 | `esp32.ino`           | C/C++ code for ESP32 to **read sensor data**, **send it to the server**, and **apply fuzzy control output**. |
 | `FuzzyO.py`           | Fuzzy logic function using **manually tuned** membership functions. |
 | `FuzzyGA.py`          | Fuzzy logic function using **GA-optimized** membership functions. |
