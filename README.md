@@ -1,20 +1,52 @@
-# Fuzzy-GA-Control-On-Soil-Humidity
-Using Fuzzy-GA to control actuators that is a water pump that provide water for soil humidity.
+🌱 Fuzzy-GA-Control-On-Soil-Humidity
+A smart soil humidity control system that uses Fuzzy Logic and Genetic Algorithms (GA) to regulate a water pump for maintaining optimal soil moisture. This system includes both simulation tools and real-time integration with an ESP32 microcontroller.
 
-#### SimulationFuzzy.py
-This file is used as a simulation of fuzzy controlled system using membership function that tuned manually.
+🔍 Overview
+Traditional threshold-based systems may not adapt well to dynamic environments like soil moisture. This project applies fuzzy logic with optimized membership functions to enhance control accuracy and flexibility.
 
-#### SimulationFGA.py
-This file is used as a simulation that the MF(Membership Function) is getting from GA tuned MF.
+Key features:
 
-#### MembershipTunerGA.py 
-This file is used to generate MF that tuned by GA.
+Manual vs GA-optimized fuzzy membership function comparison
 
-#### espflask.py
-This file is used as a server for transferring data from esp32 to database and host(computer) and the other way around using HTTP protocol.
+Real-time soil moisture monitoring and water control
 
-#### esp32.ino
-This file is used as C code for esp32 that read the sensor data and sending the data to server and give output of the fuzzy.
+ESP32 microcontroller integration with HTTP-based communication
 
-#### FuzzyO.py and FuzzyGA.py
-This file is used as a function, the function count output based on the input of the sensor. the diffrence between the two is the membership function only, one is tuned manuallt and one is using GA.
+Python-based simulation and tuning tools
+
+🧠 How It Works
+Sensor Input: The ESP32 reads soil moisture values from a sensor.
+
+Data Transmission: Sensor data is sent via HTTP to a server (hosted using Flask).
+
+Fuzzy Logic Processing: The server calculates control output (e.g., pump power level) based on fuzzy rules and membership functions.
+
+Control Output: The ESP32 receives the result and adjusts the water pump accordingly.
+
+📁 File Descriptions
+
+File	Description
+SimulationFuzzy.py	Simulates fuzzy logic control using manually tuned membership functions.
+SimulationFGA.py	Simulates fuzzy logic control using GA-optimized membership functions.
+MembershipTunerGA.py	Uses a Genetic Algorithm to optimize fuzzy membership functions.
+espflask.py	Flask-based server to exchange data between ESP32, computer, and database using HTTP.
+esp32.ino	C/C++ code for ESP32 to read sensor data, send it to the server, and apply fuzzy control output.
+FuzzyO.py	Fuzzy logic function using manually tuned membership functions.
+FuzzyGA.py	Fuzzy logic function using GA-optimized membership functions.
+⚙️ System Requirements
+Hardware:
+ESP32 Development Board
+
+Soil Moisture Sensor
+
+Relay + Water Pump
+
+Wi-Fi connection
+
+Software:
+Python 3.x
+
+Arduino IDE
+
+Required Python libraries: numpy, flask, scikit-fuzzy, requests
+
