@@ -1,7 +1,7 @@
 # Fuzzy-GA-Control-On-Soil-Humidity
 Using Fuzzy-GA to control actuators that is a water pump that provide water for soil humidity.
 
-## SimulationFuzzy.py
+#### SimulationFuzzy.py
 This file is used as a simulation of fuzzy controlled system using membership function that tuned manually.
 
 ## SimulationFGA.py
