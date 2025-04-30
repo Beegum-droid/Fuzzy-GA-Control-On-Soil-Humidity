@@ -57,10 +57,3 @@ Traditional threshold-based systems may not adapt well to dynamic environments l
   - `requests`
 
 ---
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/Fuzzy-GA-Control-On-Soil-Humidity.git
-cd Fuzzy-GA-Control-On-Soil-Humidity
